@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="contributeBookForm" style="display: none;">
+        <h2>Contribute a Book</h2>
+        <form id="bookContributionForm">
+            <p>
+                <label>Book Title: <input type="text" id="bookTitle" required /></label>
+            </p>
+            <p>
+                <label>Author Name: <input type="text" id="authorName" required /></label>
+            </p>
+            <p>
+                <label>Your Name: <input type="text" id="contributorName" required /></label>
+            </p>
+            <p>
+                <label>Book File: <input type="file" id="bookFile" accept=".pdf" required /></label>
+            </p>
+            <p>
+                <button type="submit">Submit Contribution</button>
+            </p>
+        </form>
+        <div id="thankYouMessage" style="display: none;">
+            <h3>Thank you for contributing!</h3>
+            <p>Your book has been uploaded successfully.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
